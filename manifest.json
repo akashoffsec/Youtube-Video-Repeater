@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Video Repeater",
+  "version": "1.0",
+  "description": "Adds a repeat button to YouTube videos.",
+  "permissions": ["tabs", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/watch*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
